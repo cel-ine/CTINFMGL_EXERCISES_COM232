@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panehome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #33CCFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <children>
+      <Label fx:id="nameLabel" layoutX="151.0" layoutY="70.0" text="Welcome to Waze, ">
+         <font>
+            <Font name="Arial Black" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="1.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #0099CC;" />
+      <ImageView fx:id="wazelogo" fitHeight="117.0" fitWidth="110.0" layoutX="14.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: transparent;">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="hometable" layoutX="88.0" layoutY="130.0" prefHeight="200.0" prefWidth="425.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="110.0" text="Username" />
+          <TableColumn fx:id="passwordColumn" prefWidth="102.0" text="Password" />
+            <TableColumn fx:id="emailColumn" prefWidth="91.0" text="Email" />
+            <TableColumn fx:id="accountcreatedcol" prefWidth="121.0" text="Account Created" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
